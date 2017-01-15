@@ -147,6 +147,9 @@
 			$compile(tpl)(scope);
 
 			map.map = L.map(el.find(".fm-map")[0]);
+			
+		 	map.clusterGroup = L.markerClusterGroup();
+			map.map.addLayer(map.clusterGroup);
 
 			map.map.almostOver.options.distance = 10;
 
