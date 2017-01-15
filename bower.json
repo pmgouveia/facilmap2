@@ -35,7 +35,8 @@
     "leaflet-hash": "https://raw.githubusercontent.com/mlevans/leaflet-hash/master/leaflet-hash.js",
     "Leaflet.SimpleGraticule": "ablakey/Leaflet.SimpleGraticule",
     "Open-SVG-Map-Icons": "twain47/Open-SVG-Map-Icons",
-    "filtrex": "https://raw.githubusercontent.com/joewalnes/filtrex/master/filtrex.js"
+    "filtrex": "https://raw.githubusercontent.com/joewalnes/filtrex/master/filtrex.js",
+    "leaflet.markercluster": "^1.0.0"
   },
   "resolutions": {
     "leaflet": "^1.0.1"
