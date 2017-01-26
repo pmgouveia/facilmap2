@@ -1,7 +1,6 @@
-mhart/alpine-node:latest
+FROM mhart/alpine-node:latest
 
-RUN apt-get install npm
-# RUN apk update && apk add git
+RUN apk update && apk add git
 
 RUN adduser -D -h /opt/facilmap -s /bin/bash facilmap
 WORKDIR /opt/facilmap
