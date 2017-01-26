@@ -9,10 +9,11 @@ COPY ./ ./
 RUN chown -R facilmap:facilmap .
 
 USER facilmap
-RUN npm run deps
-RUN npm run clean
-RUN npm run build
+RUN npm update
+RUN bower update
+RUN gulp
 RUN npm install mysql pg sqlite3 tedious
+RUN gulp clean
 
 USER root
 RUN chown -R root:root .
