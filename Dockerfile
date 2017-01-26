@@ -10,8 +10,13 @@ COPY ./ ./
 RUN chown -R facilmap:facilmap .
 
 USER facilmap
-RUN npm update --dev
-RUN bower update
+RUN npm install
+
+USER root
+RUN npm install -g gulp bower
+
+USER facilmap
+RUN bower install
 RUN gulp
 RUN npm install mysql pg sqlite3 tedious
 RUN gulp clean
