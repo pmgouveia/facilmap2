@@ -2,6 +2,7 @@ FROM mhart/alpine-node:latest
 
 RUN apk update && apk add git
 
+RUN mkdir -p /opt/facilmap
 RUN adduser -D -h /opt/facilmap -s /bin/bash facilmap
 WORKDIR /opt/facilmap
 
