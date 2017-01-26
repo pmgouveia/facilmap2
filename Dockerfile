@@ -10,7 +10,7 @@ COPY ./ ./
 RUN chown -R facilmap:facilmap .
 
 USER facilmap
-RUN npm update
+RUN npm update --dev
 RUN bower update
 RUN gulp
 RUN npm install mysql pg sqlite3 tedious
